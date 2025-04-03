@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>식당 예약</title>
+    </head>
+    <body>
+        <h2>식당 예약하기</h2>
+        <form name="booking" action="dummy" method="get">
+            <fieldset>
+                <legend>예약자 정보</legend>
+                <label for="name">예약자 : </label>
+                <input type="text" id="name" name="name" size="22" value="" /><br />
+                <label for="phonenumber">연락처 : </label>
+                <input type="text" id="phonenumber" name="phonenumber" size="22" placeholder="010-1234-5678" />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>예약 정보</legend>
+                <label for="day">날짜 : </label>
+                <input type="date" id="day" name="reservation" value="2023-10-03" /> <br />
+                <label for="hour">시간 : </label>
+                <input type="time" id="hour" name="hour" value="18:00" required /><br />
+                <label for="people">예약인원 : </label>
+                <select id="people" name="people" size="1">
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                    <option value="4" selected>4명</option>
+                    <option value="5">5명</option>
+                    <option value="6">6명</option>
+                    <option value="7">7명</option>
+                    <option value="8">8명</option>
+                </select>
+                <br />
+                위치 :
+                <label for="place1">본관</label>
+                <input type="radio" id="place1" name="place" value="본관" checked />
+                <label for="place2">별관</label>
+                <input type="radio" id="place2" name="place" value="별관" /> <br />
+                옵션 :
+                <label for="chair">아기의자</label>
+                <input type="checkbox" id="chair" name="option" value="아기의자" />
+                <label for="cooking">채식요리</label>
+                <input type="checkbox" id="cooking" name="option" value="채식요리" />
+                <label for="room">단독룸</label>
+                <input type="checkbox" id="room" name="option" value="단독룸" />
+            </fieldset>
+            <br />
+            <!-- <input type="submit" value="예약" />
+            <input type="reset" value="취소" /> -->
+            <button type="submit">예약</button>
+            <button type="reset">취소</button>
+        </form>
+    </body>
+</html>
