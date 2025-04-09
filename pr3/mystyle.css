@@ -1,0 +1,49 @@
+body {
+    background: url('media/backImage.png');
+    background-size: 100px 200px;
+    background-repeat: repeat;
+}
+
+h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color: red;
+}
+
+/* noto-serif-kr-<uniquifier > {
+    font-family: 'Noto Serif KR', serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: yellow;
+}
+
+tr:nth-child(8) td:nth-child(2) {
+    background-color: #845ec2;
+}
+
+tr:nth-child(5) td:nth-child(3) {
+    background-color: #d65db1;
+}
+
+tr:nth-child(8) td:nth-child(4) {
+    background-color: #ff6f91;
+}
+
+tr:nth-child(5) td:nth-child(5) {
+    background-color: #ff9671;
+}
+tr:nth-child(8) td:nth-child(5) {
+    background-color: #ffc75f;
+}
+tr:nth-child(6) td:nth-child(4) {
+    background-color: #f9f871;
+}
